@@ -1,0 +1,7 @@
+.heroDescription{
+    padding-top: 93px;
+}
+.heroImage{
+    -webkit-transform: translateX(5%);
+    width: 100%;
+}

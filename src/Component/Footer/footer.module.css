@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px;
+}
+.navigation{
+    padding-left: 10px;
+}
+.navigationList{
+    list-style-type: none;
+}
+.logoSosmedItem{
+    padding-left: 16px;
+    padding-right: 16px;
+}

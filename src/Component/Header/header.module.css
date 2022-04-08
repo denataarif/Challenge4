@@ -1,0 +1,26 @@
+
+.navbar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background: #F1F3FF;
+}
+.menuList{
+    list-style-type: none;
+}
+.menuListItem{
+    display: inline;
+    padding: 10px;
+}
+.submit {
+    align-self: flex-end;
+    margin-left: 8px;
+}
+.submit {
+    background: green;
+    border: 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 16px;
+    color: #ffffff;
+}
