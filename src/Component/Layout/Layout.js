@@ -1,10 +1,30 @@
 import React from 'react'
 
-import style from './footer.module.css'
+import style from './layout.module.css'
 
-const Footer = () => {
+const Layout = ({ children }) => {
     return(
-        <div className={style.footer}>
+        <>
+            {/* Navbar */}
+            <div className='navbar'>
+                <div className='logo'>
+                    <img src="/images/logo.png" />
+                </div>
+                <div className='Menu'>
+                    <ul className={style.menuList}>
+                        <li className={style.menuListItem}><a href='#'>Our Services</a></li>
+                        <li className={style.menuListItem}><a href='#'>Why Us</a></li>
+                        <li className={style.menuListItem}><a href='#'>Testimonial</a></li>
+                        <li className={style.menuListItem}><a href='#'>FAQ</a></li>
+                        <li className={style.menuListItem}><button className={style.submit} type="submit">Register</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            {/* {children} */}
+
+            {/* Footer */}
+            <div className={style.footer}>
             <div className="container">
                 <div className='row'>
                     <div className="alamat col-3">
@@ -36,8 +56,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+        </>
     )
 }
 
-export default Footer
+export default Layout

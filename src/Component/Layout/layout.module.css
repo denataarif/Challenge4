@@ -1,3 +1,24 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px;
+}
+.navigation{
+    padding-left: 10px;
+}
+.navigationList{
+    list-style-type: none;
+}
+.navigationListItem{
+    margin-bottom: 10px;
+}
+.logoSosmedItem{
+    padding-right: 10px;
+}
+
+
+/* Navbar */
+
 .navbar{
     display: flex;
     align-content: center;
