@@ -23,6 +23,7 @@ const Result = () => {
 
     return(
         <>
+            <div className={style.space}></div>
             <SearchBar/>
             <div className={style.result_container}>
                 {cars && cars.map((car, index) => {

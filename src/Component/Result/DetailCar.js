@@ -55,6 +55,7 @@ const DetailCar = () => {
                         </div>
                     </div>
                     <div className="col">
+                        {car && 
                         <div className="card" >
                             <img className="card-img-top" src={car.image} alt="Card image cap"/>
                             <div className="card-body">
@@ -71,6 +72,8 @@ const DetailCar = () => {
                                 <a href="#" className="btn btn-success btn-block">Lanjutkan Pembayaran</a>
                             </div>
                         </div>
+                        }
+
                     </div>
                 </div>
                 <div className='d-flex justify-content-center mt-5'>

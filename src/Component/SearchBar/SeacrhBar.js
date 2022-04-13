@@ -9,23 +9,24 @@ const SearchBar = () => {
                 <form id="search-car">
                     <div className={style.search_container}>
                         <div className={style.search_group}>
-                            <label>Tipe Driver</label>
-                            <select placeholder='Pilih Tipe Driver'>
-                                <option>Driver Jarak Jauh</option>
-                                <option>Driver Jarak Dekat</option>                           
+                            <label for='inputState'>Tipe Driver</label>
+                            <select id='inputState'>
+                                <option selected>Pilih Tpe Driver.</option>
+                                <option>Dengan Sopir</option>
+                                <option>Tanpa Sopir (lepas kunci)</option>                           
                             </select>
                         </div>
                         <div className={style.search_group}>
-                            <label>Tanggal</label>
-                            <input type="date" placeholder='Pilih Tanggal'></input>
+                            <label for="inputAddress2">Tanggal</label>
+                            <input type="date" placeholder='Pilih Tanggal' id="inputAddress2"></input>
                         </div>
                         <div className={style.search_group}>
-                            <label>Waktu Jemput/Ambil</label>
-                            <input type="time"></input>
+                            <label for="inputAddress2">Waktu Jemput/Ambil</label>
+                            <input type="time" id='inputAddress2' placeholder='Pilih Waktu'></input>
                         </div>
                         <div className={style.search_group}>
-                            <label>Jumlah Penumpang (optional)</label>
-                            <input type="text"></input>
+                            <label for='inputAddress2'>Jumlah Penumpang (optional)</label>
+                            <input type="text" id='inputAddress2' placeholder='Jumlah Penumpang'></input>
                         </div>
                         <Link to={`/result/`} className={style.submit}>
                             <button type='submit'>Cari Mobil</button>
