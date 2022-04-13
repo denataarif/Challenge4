@@ -5,7 +5,7 @@ import style from './header.module.css'
 const Header = () => {
     return(
         <>
-            <div className='navbar'>
+            <div className='navbar bg-light'>
                 <div className='logo'>
                     <img src="/images/logo.png" />
                 </div>

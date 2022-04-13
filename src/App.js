@@ -12,23 +12,15 @@ import SearchCar from './Component/Result/SearchCar';
 
 function App() {
   return (
-    <div className="app_container">
+    <>
       <Layout>
         <Routes>
           <Route path="/" element={<SearchCar />} />
           <Route path="/result" element={<Result />} />
-          <Route path="/detail:id" element={<DetailCar />} />
+          <Route path="/detail/:id" element={<DetailCar />} />
         </Routes>
       </Layout>
-
-      {/* <div className="bg-light">
-        <Header/>
-        <Hero/>
-      </div>
-      <SearchBar/>
-      <Result/>
-      <Footer/> */}
-    </div>
+    </>
   );
 }
 

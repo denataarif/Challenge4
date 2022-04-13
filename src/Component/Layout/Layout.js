@@ -6,19 +6,22 @@ const Layout = ({ children }) => {
     return(
         <>
             {/* Navbar */}
-            <div className='navbar'>
-                <div className='logo'>
-                    <img src="/images/logo.png" />
+            <div className='navbar sticky-top bg-light'>
+                <div className='container'>
+                    <div className='logo'>
+                        <img src="/images/logo.png" />
+                    </div>
+                    <div className='Menu'>
+                        <ul className={style.menuList}>
+                            <li className={style.menuListItem}><a href='#'>Our Services</a></li>
+                            <li className={style.menuListItem}><a href='#'>Why Us</a></li>
+                            <li className={style.menuListItem}><a href='#'>Testimonial</a></li>
+                            <li className={style.menuListItem}><a href='#'>FAQ</a></li>
+                            <li className={style.menuListItem}><button className={style.submit} type="submit">Register</button></li>
+                        </ul>
+                    </div>
                 </div>
-                <div className='Menu'>
-                    <ul className={style.menuList}>
-                        <li className={style.menuListItem}><a href='#'>Our Services</a></li>
-                        <li className={style.menuListItem}><a href='#'>Why Us</a></li>
-                        <li className={style.menuListItem}><a href='#'>Testimonial</a></li>
-                        <li className={style.menuListItem}><a href='#'>FAQ</a></li>
-                        <li className={style.menuListItem}><button className={style.submit} type="submit">Register</button></li>
-                    </ul>
-                </div>
+                
             </div>
 
             {children}
@@ -58,6 +61,7 @@ const Layout = ({ children }) => {
             </div>
             </div>
         </>
+        
     )
 }
 

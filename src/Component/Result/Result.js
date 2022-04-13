@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import style from './result.module.css'
 
 import CarCard from './CarCard'
-import DetailCar from './DetailCar'
 import SearchBar from '../SearchBar/SeacrhBar'
 import axios from 'axios'
 
@@ -23,21 +22,24 @@ const Result = () => {
 
     return(
         <>
-            <div className={style.space}></div>
+            <div className={`bg-light ${style.space}`}></div>
             <SearchBar/>
-            <div className={style.result_container}>
-                {cars && cars.map((car, index) => {
-                    return(
-                        <CarCard 
-                            key={index}
-                            id={car.id}
-                            name={car.name}
-                            price={car.price}
-                            image={car.image}
-                        />
-                    )        
-                })}
+            <div className='container'>
+                <div className={style.result_container}>
+                    {cars && cars.map((car, index) => {
+                        return(
+                            <CarCard 
+                                key={index}
+                                id={car.id}
+                                name={car.name}
+                                price={car.price}
+                                image={car.image}
+                            />
+                        )        
+                    })}
+                </div>
             </div>
+            
             
         </>
     )

@@ -23,7 +23,6 @@
     display: flex;
     align-content: center;
     justify-content: space-between;
-    background: #F1F3FF;
 }
 .menuList{
     list-style-type: none;
