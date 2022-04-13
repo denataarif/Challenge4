@@ -11,10 +11,10 @@ const Header = () => {
                 </div>
                 <div className='Menu'>
                     <ul className={style.menuList}>
-                        <li className={style.menuListItem}><a href='#'>Our Services</a></li>
-                        <li className={style.menuListItem}><a href='#'>Why Us</a></li>
-                        <li className={style.menuListItem}><a href='#'>Testimonial</a></li>
-                        <li className={style.menuListItem}><a href='#'>FAQ</a></li>
+                        <li className={style.menuListItem}><a href='#' className={style.menuListItema}>Our Services</a></li>
+                        <li className={style.menuListItem}><a href='#' className={style.menuListItema}>Why Us</a></li>
+                        <li className={style.menuListItem}><a href='#' className={style.menuListItema}>Testimonial</a></li>
+                        <li className={style.menuListItem}><a href='#' className={style.menuListItema}>FAQ</a></li>
                         <li className={style.menuListItem}><button className={style.submit} type="submit">Register</button></li>
                     </ul>
                 </div>

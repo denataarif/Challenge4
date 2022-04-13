@@ -10,6 +10,11 @@
 .menuListItem{
     display: inline;
     padding: 10px;
+    color: black;
+}
+.menuListItema{
+    text-decoration: none;
+    color: black;
 }
 .submit {
     align-self: flex-end;
